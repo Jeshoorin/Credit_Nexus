@@ -20,7 +20,12 @@ export default function ReferEarn() {
               on every successful loan disbursal.
             </p>
             <div className="refer-footer">
-              <a href="#contact" className="btn btn-primary">
+              <a
+                href="https://wa.me/919025113903"
+                className="btn btn-primary"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Join as a Partner
               </a>
               <div className="refer-links">
