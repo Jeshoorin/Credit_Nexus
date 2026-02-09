@@ -13,10 +13,20 @@ export default function Hero() {
           Home and Property-backed loans with ease.
         </p>
         <div className="hero-actions">
-          <a href="#contact" className="btn btn-primary">
+          <a
+            href="https://wa.me/919025113903"
+            className="btn btn-primary"
+            target="_blank"
+            rel="noreferrer"
+          >
             Apply for a Loan
           </a>
-          <a href="#refer" className="btn btn-outline">
+          <a
+            href="https://wa.me/919025113903"
+            className="btn btn-outline"
+            target="_blank"
+            rel="noreferrer"
+          >
             Refer and Earn
           </a>
         </div>
