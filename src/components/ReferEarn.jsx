@@ -1,5 +1,5 @@
 import Container from "./Container";
-import referIllustration from "../assets/refer-illustration.svg";
+import referIllustration from "../assets/1000082519 (1).svg";
 
 export default function ReferEarn() {
   return (

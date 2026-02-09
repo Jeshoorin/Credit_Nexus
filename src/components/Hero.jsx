@@ -6,8 +6,8 @@ export default function Hero() {
       <Container>
         <h1 className="hero-title">Know your right bank - Apply Smart</h1>
         <p className="hero-subtitle">
-          Lender-friendly, borrower-first platform helping you secure personal,
-          Home and property-backed loans with ease.
+          Lender-friendly, borrower-first platform helping you secure Personal,
+          Home and Property-backed loans with ease.
         </p>
         <div className="hero-actions">
           <a href="#contact" className="btn btn-primary">

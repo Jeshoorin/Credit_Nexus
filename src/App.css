@@ -410,10 +410,7 @@ section {
 /* left illustration box */
 
 .refer-illustration {
-  background:
-    radial-gradient(circle at 0 80%, #d8eaef 0, #d8eaef 60%, transparent 61%),
-    radial-gradient(circle at 80% 0, #d7e8f1 0, #d7e8f1 58%, transparent 59%),
-    #f3f9fc;
+
   border-radius: 26px;
   padding: 30px 22px 14px;
   display: flex;
