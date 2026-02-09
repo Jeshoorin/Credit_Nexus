@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="hero" id="home">
       <Container>
-        <h1 className="hero-title">Loans Made Simple</h1>
+        <h1 className="hero-title">Know your right bank - Apply Smart</h1>
         <p className="hero-subtitle">
           Lender-friendly, borrower-first platform helping you secure personal,
           business and property-backed loans with ease.

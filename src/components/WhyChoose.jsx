@@ -39,7 +39,7 @@ export default function WhyChoose() {
               </svg>
             </div>
             <div className="why-label">Safe &amp; Secure</div>
-            <div>Bank-grade security &amp; encryption.</div>
+            <div>Transparent and secure lending processes.</div>
           </div>
 
           <div className="why-item">

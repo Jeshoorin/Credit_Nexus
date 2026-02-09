@@ -66,6 +66,8 @@ footer {
   font-weight: 700;
   color: #425464;
   background: #f8fbfe;
+  cursor: pointer;
+
 }
 
 .footer-copy {
@@ -73,6 +75,7 @@ footer {
   text-align: center;
   margin-top: 2px;
 }
+
 
 @media (max-width: 720px) {
   .footer-social {

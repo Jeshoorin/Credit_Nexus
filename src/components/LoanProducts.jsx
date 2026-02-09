@@ -15,7 +15,7 @@ export default function LoanProducts() {
             </div>
             <h3 className="card-title">Personal Loan</h3>
             <p className="card-body">
-              Easy personal loans for travel, education, emergencies and more.
+              Salary credited to bank account, monthly income ₹15,000+, and CIBIL score 700+.
             </p>
             <a href="#contact" className="btn btn-primary">
               Apply Now
@@ -30,9 +30,9 @@ export default function LoanProducts() {
                 <path d="M18 38V26h12v12" />
               </svg>
             </div>
-            <h3 className="card-title">Business Loan</h3>
+            <h3 className="card-title">Home Loan</h3>
             <p className="card-body">
-              Working capital and expansion loans tailor-made for your business.
+              Land Purchase | Flat Purchase | Home Construction | Balance Transfer with Top-Up
             </p>
             <a href="#contact" className="btn btn-primary">
               Apply Now
@@ -50,7 +50,7 @@ export default function LoanProducts() {
             </div>
             <h3 className="card-title">Loan Against Property</h3>
             <p className="card-body">
-              Unlock the value of your property with attractive rates.
+              Unlock the true value of your property with good attractive rates.
             </p>
             <a href="#contact" className="btn btn-primary">
               Apply Now
