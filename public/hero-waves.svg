@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1440 600"
+     preserveAspectRatio="none">
+
+  <defs>
+    <!-- Soft fade to white -->
+    <linearGradient id="bgFade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#CFE3E7"/>
+      <stop offset="65%" stop-color="#E6F2F4"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base background -->
+  <rect width="1440" height="600" fill="url(#bgFade)"/>
+
+  <!-- Very soft upper wave (shadow-like) -->
+  <path
+    d="
+      M0,200
+      C260,170 520,230 780,220
+      C1040,210 1240,185 1440,200
+      L1440,0 L0,0 Z"
+    fill="#BFD6DB"
+    opacity="0.35"
+  />
+
+  <!-- Very soft lower wave (almost blended) -->
+  <path
+    d="
+      M0,300
+      C300,330 580,290 840,310
+      C1100,330 1280,350 1440,340
+      L1440,0 L0,0 Z"
+    fill="#D6EAEE"
+    opacity="0.45"
+  />
+
+</svg>

@@ -1,0 +1,72 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: clamp(16px, 3vw, 24px);
+  margin-bottom: clamp(26px, 5vw, 40px);
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 22px;
+  border: 1px solid #d9e5f0;
+  padding: 22px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 10px 22px rgba(11, 28, 44, 0.06);
+}
+
+.product-grid .card.animate-rise:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.product-grid .card.animate-rise:nth-child(2) {
+  animation-delay: 0.16s;
+}
+
+.product-grid .card.animate-rise:nth-child(3) {
+  animation-delay: 0.22s;
+}
+
+.card-icon {
+  width: clamp(52px, 6vw, 60px);
+  height: clamp(52px, 6vw, 60px);
+  border-radius: 999px;
+  border: 1px solid #d7e5f0;
+  background: #f0f7fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-dark);
+  margin-bottom: 2px;
+}
+
+.card-icon svg {
+  width: 30px;
+  height: 30px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.card-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+
+.card-body {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  max-width: 220px;
+}
+
+.card .btn {
+  margin-top: 12px;
+  padding-inline: 18px;
+  font-size: 0.78rem;
+}
