@@ -130,18 +130,27 @@ header {
 }
 
 .hero-title {
-  font-size: 3rem;
+  font-size: clamp(2.2rem, 3.6vw, 3.1rem);
   font-weight: 800;
   letter-spacing: -0.05em;
   margin-bottom: 10px;
   color: #0c2235;
+  line-height: 1.08;
 }
 
 .hero-subtitle {
-  max-width: 440px;
-  font-size: 0.96rem;
+  max-width: 480px;
+  font-size: clamp(0.94rem, 1.2vw, 1.02rem);
   color: var(--text-muted);
   margin-bottom: 28px;
+}
+
+.hero-title span {
+  display: block;
+}
+
+.hero-title-accent {
+  color: var(--primary-dark);
 }
 
 .hero-actions {
@@ -151,16 +160,44 @@ header {
 
 /* MOTION */
 
+header,
 .hero,
+#services,
+#about,
+#refer,
+footer {
+  animation: rise-in 0.7s ease both;
+}
+
+header {
+  animation-delay: 0.02s;
+}
+
+.hero {
+  animation-delay: 0.06s;
+}
+
+#services {
+  animation-delay: 0.12s;
+}
+
+#about {
+  animation-delay: 0.18s;
+}
+
+#refer {
+  animation-delay: 0.24s;
+}
+
+footer {
+  animation-delay: 0.3s;
+}
+
 .product-grid .card,
 .why-item,
 .refer-row,
 .footer-grid {
   animation: rise-in 0.7s ease both;
-}
-
-.hero {
-  animation-delay: 0.05s;
 }
 
 .product-grid .card:nth-child(1) {
@@ -223,7 +260,12 @@ header {
 
 @media (prefers-reduced-motion: reduce) {
   .page-shell,
+  header,
   .hero,
+  #services,
+  #about,
+  #refer,
+  footer,
   .product-grid .card,
   .why-item,
   .refer-row,
@@ -291,34 +333,36 @@ section {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 20px;
-  margin-bottom: 36px;
+  gap: 24px;
+  margin-bottom: 42px;
 }
 
 .card {
-  background: #ffffff;
-  border-radius: 22px;
+  background: linear-gradient(180deg, #ffffff 0%, #f9fcff 100%);
+  border-radius: 24px;
   border: 1px solid #d9e5f0;
-  padding: 22px 18px 18px;
+  padding: 26px 20px 20px;
   display: flex;
   flex-direction: column;
   gap: 6px;
   align-items: center;
   text-align: center;
-  box-shadow: 0 10px 22px rgba(11, 28, 44, 0.06);
+  box-shadow: 0 16px 30px rgba(11, 28, 44, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .card-icon {
-  width: 64px;
-  height: 64px;
+  width: 68px;
+  height: 68px;
   border-radius: 999px;
   border: 1px solid #d7e5f0;
-  background: #f2f7fb;
+  background: radial-gradient(circle at 30% 25%, #f7fcff 0%, #e9f3f9 70%);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--primary-dark);
-  margin-bottom: 2px;
+  margin-bottom: 6px;
 }
 
 .card-icon svg {
@@ -333,20 +377,26 @@ section {
 }
 
 .card-title {
-  font-size: 0.98rem;
+  font-size: 1.02rem;
   font-weight: 700;
 }
 
 .card-body {
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   color: var(--text-muted);
-  max-width: 200px;
+  max-width: 220px;
 }
 
 .card .btn {
-  margin-top: 12px;
+  margin-top: 14px;
   padding-inline: 18px;
   font-size: 0.78rem;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 42px rgba(11, 28, 44, 0.12);
+  border-color: #c6dbea;
 }
 
 /* WHY CHOOSE */
@@ -410,10 +460,7 @@ section {
 /* left illustration box */
 
 .refer-illustration {
-  background:
-    radial-gradient(circle at 0 80%, #d8eaef 0, #d8eaef 60%, transparent 61%),
-    radial-gradient(circle at 80% 0, #d7e8f1 0, #d7e8f1 58%, transparent 59%),
-    #f3f9fc;
+
   border-radius: 26px;
   padding: 30px 22px 14px;
   display: flex;
@@ -607,7 +654,17 @@ footer {
   }
 
   .hero-title {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
+  }
+
+  .btn {
+    font-size: 0.82rem;
+    padding: 9px 18px;
+  }
+
+  .card .btn {
+    font-size: 0.72rem;
+    padding-inline: 16px;
   }
 
   .product-grid {
@@ -624,5 +681,13 @@ footer {
 
   .footer-social {
     justify-content: flex-start;
+  }
+
+  .refer-illustration {
+    display: none;
+  }
+
+  .refer-row {
+    gap: 16px;
   }
 }
