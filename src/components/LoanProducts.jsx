@@ -15,7 +15,7 @@ export default function LoanProducts() {
             </div>
             <h3 className="card-title">Personal Loan</h3>
             <p className="card-body">
-              Salary credited to bank account, monthly income ₹15,000+, and CIBIL score 700+.
+              Salary credited to bank account, monthly salary ₹15,000+, and CIBIL score 700+.
             </p>
             <a href="#contact" className="btn btn-primary">
               Apply Now

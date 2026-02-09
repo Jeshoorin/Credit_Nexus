@@ -4,7 +4,10 @@ export default function Hero() {
   return (
     <section className="hero" id="home">
       <Container>
-        <h1 className="hero-title">Know your right bank - Apply Smart</h1>
+        <h1 className="hero-title">
+          <span>Know Your Right Bank</span>
+          <span className="hero-title-accent">Apply Smart</span>
+        </h1>
         <p className="hero-subtitle">
           Lender-friendly, borrower-first platform helping you secure Personal,
           Home and Property-backed loans with ease.
