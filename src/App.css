@@ -60,10 +60,11 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
+  transform: translateX(-20px);
 }
 
 .logo-image {
-  height: clamp(34px, 6vw, 64px);
+  height: clamp(34px, 7vw, 84px);
   width: auto;
   display: block;
 }
@@ -621,6 +622,11 @@ footer {
 
   .nav-links {
     display: none; /* like many mobile designs */
+  }
+
+  .logo-image {
+    height: 48px;
+    transform: translateX(20px);
   }
 
   .hero {
