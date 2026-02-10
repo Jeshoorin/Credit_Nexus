@@ -5,11 +5,7 @@ export default function Navbar() {
     <header>
       <Container className="nav">
         <div className="logo">
-          <div className="logo-mark" />
-          <div>
-            <div className="logo-text-main">CREDIT</div>
-            <div className="logo-text-sub">NEXUS</div>
-          </div>
+          <img className="logo-image" src="/CN_logo.png" alt="Credit Nexus" />
         </div>
 
         <nav className="nav-links">
