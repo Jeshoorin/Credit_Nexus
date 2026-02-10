@@ -17,7 +17,12 @@ export default function LoanProducts() {
             <p className="card-body">
               Salary credited to bank account, monthly salary ₹15,000+, and CIBIL score 700+.
             </p>
-            <a href="#contact" className="btn btn-primary">
+            <a
+              href="https://wa.me/919025113903"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
               Apply Now
             </a>
           </article>
@@ -34,7 +39,12 @@ export default function LoanProducts() {
             <p className="card-body">
               Land Purchase | Flat Purchase | Home Construction | Balance Transfer with Top-Up
             </p>
-            <a href="#contact" className="btn btn-primary">
+            <a
+              href="https://wa.me/919025113903"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
               Apply Now
             </a>
           </article>
@@ -52,7 +62,12 @@ export default function LoanProducts() {
             <p className="card-body">
               Unlock the true value of your property with good attractive rates.
             </p>
-            <a href="#contact" className="btn btn-primary">
+            <a
+              href="https://wa.me/919025113903"
+              className="btn btn-primary"
+              target="_blank"
+              rel="noreferrer"
+            >
               Apply Now
             </a>
           </article>
